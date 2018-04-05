@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "oo7": "^0.5.9",
+    "oo7-parity": "^0.6.14",
     "oo7-react": "^0.4.9",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
