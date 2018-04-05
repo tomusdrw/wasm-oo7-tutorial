@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+// Import oo7
 import {TimeBond} from 'oo7';
 
 ReactDOM.render(<App />, document.getElementById('root'));
