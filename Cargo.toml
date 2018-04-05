@@ -3,16 +3,16 @@ name = "wasm-demo"
 version = "0.1.0"
 authors = ["Tomasz Drwięga <tomusdrw@gmail.com>"]
 
-# 2/ Add pwasm-ethereum dependency
 [dependencies]
+# We're adding pwasm-std library to get a H256 type
+pwasm-std = "0.6"
 pwasm-ethereum="0.3"
 
-# 3/ Mark the crate as cdylib
+
 [lib]
 crate-type = ["cdylib"]
 path = "./src/lib.rs"
 
-# 4/ Enable size optimizations
 [profile.release]
 panic = "abort"
 lto = true
