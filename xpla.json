@@ -1,0 +1,21 @@
+{
+  "xpla.version": 1,
+  "name": "pWASM + oo7",
+  "date": "5 April 2018",
+  "link": "",
+  "author": {
+    "name": "Tomasz Drwięga",
+    "link": "@tomusdrw"
+  },
+  "branches": [
+    {
+      "name": "rust",
+      "title": "WASM contracts development"
+    },
+    {
+      "name": "js",
+      "title": "oo7 dapps building"
+    }
+  ]
+}
+      
