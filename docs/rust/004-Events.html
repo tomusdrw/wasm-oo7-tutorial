@@ -1,0 +1,41 @@
+
+    <!DOCTYPE html>
+    <html xp-run-server-url="https://xpla.org" xp-presence-url="wss://presence.xpla.org">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Events</title>
+        <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+      </head>
+      <body class="xp-slide">
+        <div class="xp-row with-comments">
+          
+    <div class="xp-column" style="width: 100%">
+      <xp-editor active="src/lib.rs" >
+        	<script id="src/lib.rs" highlight="12-44,46-65" type="application/octetstream" src="004/src/lib.rs"></script>
+	<script id="Cargo.lock" type="application/octetstream" src="003/Cargo.lock"></script>
+	<script id="Cargo.toml" type="application/octetstream" src="003/Cargo.toml"></script>
+	<script id="build.sh" type="application/octetstream" src="001/build.sh"></script>
+      </xp-editor>
+    </div>
+  
+        </div>
+        <div class="xp-resize-row"></div>
+        <div class="xp-row comments">
+          <xp-annotations>
+            <header><h1>Events</h1></header>
+            <details>
+  <h1>Events</h1>
+  <p>
+    Ethereum (EVM) contracts can also generate events. We can do the same in WASM contracts.
+  </p>
+  <p>
+    Events are cheap but are not accessible on-chain, you can access them in your dapp though.
+  </p>
+</details>
+
+          </xp-annotations>
+        </div>
+      </body>
+    </html>
+  

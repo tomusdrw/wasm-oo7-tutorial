@@ -1,0 +1,42 @@
+
+    <!DOCTYPE html>
+    <html xp-run-server-url="https://xpla.org" xp-presence-url="wss://presence.xpla.org">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Storage access.</title>
+        <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+      </head>
+      <body class="xp-slide">
+        <div class="xp-row with-comments">
+          
+    <div class="xp-column" style="width: 100%">
+      <xp-editor active="Cargo.lock" >
+        	<script id="Cargo.lock" highlight="175-181" type="application/octetstream" src="002/Cargo.lock"></script>
+	<script id="Cargo.toml" highlight="3-18" type="application/octetstream" src="002/Cargo.toml"></script>
+	<script id="src/lib.rs" highlight="1-30" type="application/octetstream" src="002/src/lib.rs"></script>
+	<script id="build.sh" type="application/octetstream" src="001/build.sh"></script>
+      </xp-editor>
+    </div>
+  
+        </div>
+        <div class="xp-resize-row"></div>
+        <div class="xp-row comments">
+          <xp-annotations>
+            <header><h1>Storage access.</h1></header>
+            <details>
+  <h1>Writing to and reading from storage</h1>
+  <p>
+    The initial contract doesn't look useful. Let's make it stateful.
+  </p>
+  <p>
+    <a href="https://paritytech.github.io/pwasm-ethereum/pwasm_ethereum/#functions">pwasm_ethereum</a>
+    gives us ethereum-specific calls, for instance to access the storage.
+  </p>
+</details>
+
+          </xp-annotations>
+        </div>
+      </body>
+    </html>
+  

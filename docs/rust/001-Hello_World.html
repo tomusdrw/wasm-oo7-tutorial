@@ -1,0 +1,41 @@
+
+    <!DOCTYPE html>
+    <html xp-run-server-url="https://xpla.org" xp-presence-url="wss://presence.xpla.org">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Hello World</title>
+        <script src="https://xpla.org/static/js/slide_loader.3.0.0.js"></script>
+      </head>
+      <body class="xp-slide">
+        <div class="xp-row with-comments">
+          
+    <div class="xp-column" style="width: 100%">
+      <xp-editor active="Cargo.lock" >
+        	<script id="Cargo.lock" highlight="1-248" type="application/octetstream" src="001/Cargo.lock"></script>
+	<script id="Cargo.toml" highlight="1-19" type="application/octetstream" src="001/Cargo.toml"></script>
+	<script id="build.sh" highlight="1-21" type="application/octetstream" src="001/build.sh"></script>
+	<script id="src/lib.rs" highlight="1-18" type="application/octetstream" src="001/src/lib.rs"></script>
+      </xp-editor>
+    </div>
+  
+        </div>
+        <div class="xp-resize-row"></div>
+        <div class="xp-row comments">
+          <xp-annotations>
+            <header><h1>Hello World</h1></header>
+            <details>
+  <h1>Hello World from a WASM contract</h1>
+  <p>
+    Let's have a look how to write smart contract in Rust.
+  </p>
+  <p>
+    We set up a base Rust project using <code>nightly</code> version of the compiler and <code>wasm32-unknown-unknown</code> target.
+  </p>
+</details>
+
+          </xp-annotations>
+        </div>
+      </body>
+    </html>
+  
