@@ -1,0 +1,51 @@
+[
+  {
+    "type": "function",
+    "name": "block_hash",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "returnValue",
+        "type": "bytes"
+      }
+    ],
+    "constant": true
+  },
+  {
+    "type": "function",
+    "name": "message",
+    "inputs": [
+      {
+        "name": "data",
+        "type": "bytes"
+      }
+    ],
+    "outputs": [],
+    "constant": false
+  },
+  {
+    "type": "event",
+    "name": "Message",
+    "inputs": [
+      {
+        "name": "indexed_from",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "value",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "data",
+        "type": "bytes",
+        "indexed": false
+      }
+    ]
+  },
+  {
+    "type": "constructor",
+    "inputs": []
+  }
+]
