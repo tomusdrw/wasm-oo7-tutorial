@@ -1,10 +1,9 @@
 <details>
-  <h1>Writing to and reading from storage</h1>
+  <h1>Contract ABI</h1>
   <p>
-    The initial contract doesn't look useful. Let's make it stateful.
+    Although it is possible to parse <code>pwasm_ethereum::input()</code> manually and handle multiple methods of your contract it would be extremely cumbersome.
   </p>
   <p>
-    <a href="https://paritytech.github.io/pwasm-ethereum/pwasm_ethereum/#functions">pwasm_ethereum</a>
-    gives us ethereum-specific calls, for instance to access the storage.
+    <code>pwasm-abi-derive</code> crate allows you to easily define your contracts methods and automatically dispatch the calls.
   </p>
 </details>

@@ -4,10 +4,13 @@ version = "0.1.0"
 authors = ["Tomasz Drwięga <tomusdrw@gmail.com>"]
 
 [dependencies]
-# We're adding pwasm-std library to get a H256 type
+bigint = { version = "4", default-features = false }
+parity-hash = { version = "1", default-features = false }
 pwasm-std = "0.6"
 pwasm-ethereum="0.3"
-
+# 2/ Adding ABI library and utilities
+pwasm-abi="0.1"
+pwasm-abi-derive="0.1"
 
 [lib]
 crate-type = ["cdylib"]
