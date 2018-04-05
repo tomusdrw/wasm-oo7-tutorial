@@ -1,9 +1,9 @@
 <details>
-  <h1>Contract ABI</h1>
+  <h1>Events</h1>
   <p>
-    Although it is possible to parse <code>pwasm_ethereum::input()</code> manually and handle multiple methods of your contract it would be extremely cumbersome.
+    Ethereum (EVM) contracts can also generate events. We can do the same in WASM contracts.
   </p>
   <p>
-    <code>pwasm-abi-derive</code> crate allows you to easily define your contracts methods and automatically dispatch the calls.
+    Events are cheap but are not accessible on-chain, you can access them in your dapp though.
   </p>
 </details>
