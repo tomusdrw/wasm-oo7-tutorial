@@ -3,12 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 
 import {Rspan} from 'oo7-react';
-import {bonds, formatBalance, formatBlockNumber, bytesToHex} from 'oo7-parity';
+import {bonds, formatBalance, formatBlockNumber} from 'oo7-parity';
 import contractAbi from './abi.json';
+
+// Displaying a contract data has been moved to a separate component
+import Contract from './Contract';
 
 class App extends Component {
 
-  // 4/ Create a contract object.
   contract = bonds.makeContract(
     '0x4C801a31573e6B726fA02D6d8958C77203694FE2',
     contractAbi
@@ -29,12 +31,8 @@ class App extends Component {
           </Rspan></strong>
         </p>
 
-        {/* 5/ Display a block hash stored in the contract */}
-        <p>
-          Contract has been deployed at <strong>
-            <Rspan>{this.contract.block_hash().map(bytesToHex)}</Rspan>
-          </strong>
-        </p>
+        {/* We pass the contract instance in props. */}
+        <Contract contract={this.contract} />
       </div>
     );
   }
